@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0d19">
+  <meta name="description" content="دفترچه دیجیتال آتنا رضاحسینی؛ علاقه‌مند به برنامه‌نویسی، یادگیری و طراحی.">
+  <title>آتنا رضاحسینی | دفترچه دیجیتال</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="spaceCanvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="page-shell">
+    <nav class="navbar" aria-label="منوی اصلی">
+      <a class="brand" href="#home" aria-label="رفتن به ابتدای صفحه">A T E N A <span>✦</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">درباره من</a>
+        <a href="#interests">علاقه‌مندی‌ها</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#mood">دنیای من</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="تغییر حالت رنگی" title="تغییر حالت رنگی">☼</button>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> PERSONAL PROFILE · 2026</div>
+        <p class="hero-pretitle">سلام، من</p>
+        <h1>آتنا <span>رضاحسینی</span></h1>
+        <div class="role-line"><span id="typedRole">علاقه‌مند به برنامه‌نویسی</span><i></i></div>
+        <p class="hero-description">
+          از کرمان؛ کنجکاو، درون‌گرا و عاشق فهمیدن اینکه چیزها چطور کار می‌کنند.
+          اینجا گوشه‌ای از مسیر یادگیری، سلیقه و دنیای شخصی من است.
+        </p>
+        <div class="hero-tags">
+          <span>Calm but chaotic</span><span>INTP</span><span>Curious mind</span>
+        </div>
+        <a class="primary-link" href="#about">بیشتر درباره من <span>←</span></a>
+      </div>
+
+      <div class="portrait-wrap">
+        <div class="portrait-orbit orbit-a"></div>
+        <div class="portrait-orbit orbit-b"></div>
+        <div class="portrait-frame">
+          <img src="assets/atena.jpg" alt="عکس پرتره آتنا رضاحسینی" class="portrait">
+        </div>
+        <span class="floating-star star-a">✦</span>
+        <span class="floating-star star-b">✧</span>
+        <div class="portrait-caption"><span class="caption-mark">✳</span><span>ATENA'S<br>UNIVERSE</span></div>
+      </div>
+      <div class="hero-bottom-note">SCROLL TO EXPLORE <span>↓</span></div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-heading">
+          <span class="section-number">01 /</span>
+          <div><p class="section-kicker">THE PERSON BEHIND THE SCREEN</p><h2>پشت این صفحه</h2></div>
+          <span class="heading-line"></span>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card about-card">
+            <span class="card-label">A LITTLE INTRODUCTION</span>
+            <p>
+              من آتنا هستم؛ متولد کرمان و علاقه‌مند به کامپیوتر و برنامه‌نویسی.
+              از یاد گرفتن چیزهای تازه لذت می‌برم و ترجیح می‌دهم هر موضوعی را
+              از پایه و با منطق خودش بفهمم. ذهنم معمولاً آرام و تحلیل‌گر است،
+              اما همیشه چندین فکر و ایده هم‌زمان در آن جریان دارد!
+            </p>
+            <p class="muted-paragraph">
+              این صفحه یک رزومه‌ی شخصی و در حال رشد است؛ نه ادعای کامل بودن،
+              بلکه تصویری از چیزهایی که دوست دارم و مسیری که در آن قدم می‌زنم.
+            </p>
+          </article>
+          <aside class="glass-card facts-card">
+            <span class="card-label">QUICK FACTS</span>
+            <div class="facts-grid">
+              <div class="fact"><span>شهر</span><strong>کرمان، ایران</strong></div>
+              <div class="fact"><span>مسیر تحصیلی</span><strong>ریاضی و کامپیوتر</strong></div>
+              <div class="fact"><span>حال‌وهوای شخصیتی</span><strong>درون‌گرا و منطقی</strong></div>
+              <div class="fact"><span>تاریخ تولد</span><strong>۱۳۸۷/۰۱/۲۳</strong></div>
+            </div>
+            <div class="chips"><span>INTP</span><span>اهل یادگیری</span><span>خانه‌دوست</span><span>کنجکاو</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="interests">
+        <div class="section-heading">
+          <span class="section-number">02 /</span>
+          <div><p class="section-kicker">THINGS THAT KEEP MY MIND BUSY</p><h2>چیزهایی که دوست دارم</h2></div>
+          <span class="heading-line"></span>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card"><span class="interest-icon">⌘</span><h3>برنامه‌نویسی و تکنولوژی</h3><p>ساختن صفحه‌های وب، تجربه کردن کدها و فهمیدن منطق پشت ابزارهای دیجیتال.</p><span class="card-index">01</span></article>
+          <article class="interest-card"><span class="interest-icon">𓂀</span><h3>تاریخ و تمدن‌ها</h3><p>ایران باستان، تمدن‌های قدیمی، پوشاک، آیین‌ها و روایت زندگی مردم در گذشته.</p><span class="card-index">02</span></article>
+          <article class="interest-card"><span class="interest-icon">✧</span><h3>طراحی و زیبایی‌شناسی</h3><p>فضاهای تیره، حال‌وهوای نجومی، تصویرسازی، ترکیب رنگ و جزئیات بصری.</p><span class="card-index">03</span></article>
+          <article class="interest-card"><span class="interest-icon">♫</span><h3>موسیقی و سینما</h3><p>موسیقی‌های غمگین و سینمایی، حال‌وهوای شبانه و فیلم‌های اجتماعی ایرانی.</p><span class="card-index">04</span></article>
+          <article class="interest-card"><span class="interest-icon">⌕</span><h3>یادگیری و زبان</h3><p>تمرین زبان انگلیسی، یاد گرفتن مهارت‌های تازه و کشف موضوعات جدید.</p><span class="card-index">05</span></article>
+          <article class="interest-card"><span class="interest-icon">☕</span><h3>جزئیات روزمره</h3><p>اتاق شخصی، گل بابونه، چای، باران، پاییز و خوراکی‌های ترش.</p><span class="card-index">06</span></article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <span class="section-number">03 /</span>
+          <div><p class="section-kicker">LEARNING IN PROGRESS</p><h2>مسیر کدنویسی من</h2></div>
+          <span class="heading-line"></span>
+        </div>
+        <div class="glass-card skills-card">
+          <p class="skills-intro">مهارت‌هایی که یاد گرفته‌ام یا در حال تمرینشان هستم؛ قدم‌به‌قدم و با تمرین بیشتر.</p>
+          <div class="skill-list">
+            <div class="skill-row"><div class="skill-meta"><strong>HTML</strong><span>ساختار صفحه‌های وب</span></div><div class="skill-track"><span style="--level:78%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><strong>CSS</strong><span>استایل و چیدمان</span></div><div class="skill-track"><span style="--level:68%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><strong>JavaScript</strong><span>تعامل و منطق صفحه</span></div><div class="skill-track"><span style="--level:28%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><strong>Python</strong><span>مبانی برنامه‌نویسی</span></div><div class="skill-track"><span style="--level:38%"></span></div></div>
+            <div class="skill-row"><div class="skill-meta"><strong>Django</strong><span>آشنایی با ساخت وب‌اپ</span></div><div class="skill-track"><span style="--level:22%"></span></div></div>
+          </div>
+          <p class="skill-disclaimer">درصدها فقط نمایش تقریبی مسیر تمرین هستند و معیار رسمی سنجش مهارت نیستند.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="section-number">04 /</span>
+          <div><p class="section-kicker">LANGUAGES</p><h2>زبان‌ها</h2></div>
+          <span class="heading-line"></span>
+        </div>
+        <div class="language-grid">
+          <div class="language-item"><strong>فارسی</strong><span>زبان مادری</span><b>FA</b></div>
+          <div class="language-item"><strong>English</strong><span>متوسط</span><b>EN</b></div>
+          <div class="language-item"><strong>ترکی</strong><span>مبتدی</span><b>TR</b></div>
+        </div>
+      </section>
+
+      <section class="section" id="mood">
+        <div class="section-heading">
+          <span class="section-number">05 /</span>
+          <div><p class="section-kicker">A PERSONAL COLOR STORY</p><h2>پالتِ دنیای من</h2></div>
+          <span class="heading-line"></span>
+        </div>
+        <div class="mood-grid">
+          <div class="mood-card"><div class="swatch swatch-purple"></div><strong>بنفش و آبی</strong><span>آرامش، خیال و کمی رمزآلودگی</span></div>
+          <div class="mood-card"><div class="swatch swatch-night"></div><strong>آسمان شب</strong><span>ماه، ستاره و پنجره رو به افق</span></div>
+          <div class="mood-card"><div class="swatch swatch-flower"></div><strong>گل بابونه</strong><span>سادگی و لطافت بی‌ادعا</span></div>
+          <div class="mood-card"><div class="swatch swatch-autumn"></div><strong>پاییز و باران</strong><span>چای، هوای خنک و موسیقی</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-star">✦</div>
+      <p>ATENA'S NOTEBOOK</p>
+      <span>MADE OF CODE, CURIOSITY & MIDNIGHT BLUE</span>
+      <small>© <span id="year"></span> · ساخته‌شده با علاقه</small>
+    </footer>
+  </div>
+  <button id="backToTop" class="back-to-top" aria-label="بازگشت به بالای صفحه">↑</button>
+</body>
+</html>
